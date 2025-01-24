@@ -30,7 +30,7 @@
             "Microsoft.Compute/virtualMachines/read",
             "Microsoft.Compute/locations/operations/read"
           ],
-          "requiredRoleDefinitions": [
+          "requiredAzureRoleDefinitions": [
             "acdd72a7-3385-48ef-bd42-f606fba81ae0"
           ]
         }

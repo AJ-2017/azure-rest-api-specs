@@ -1,6 +1,6 @@
 {
   "parameters": {
-    "api-version": "2024-11-01-preview",
+    "api-version": "2025-01-01",
     "location": "westus2",
     "subscriptionId": "6b052e15-03d3-4f17-b2e1-be7f07588291",
     "targetTypeName": "Microsoft-VirtualMachine"
@@ -32,7 +32,9 @@
                 "Microsoft.Compute/virtualMachines/read",
                 "Microsoft.Compute/locations/operations/read"
               ],
-              "requiredRoleDefinitions": ["acdd72a7-3385-48ef-bd42-f606fba81ae0"]
+              "requiredAzureRoleDefinitions": [
+                "acdd72a7-3385-48ef-bd42-f606fba81ae0"
+              ]
             }
           }
         ]
