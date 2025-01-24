@@ -2,12 +2,13 @@
   "parameters": {
     "api-version": "2024-11-01-preview",
     "continuationToken": null,
+    "resourceGroupName": "exampleRG",
     "subscriptionId": "6b052e15-03d3-4f17-b2e1-be7f07588291"
   },
   "responses": {
     "200": {
       "body": {
-        "nextLink": "https://management.azure.com/subscriptions/6b052e15-03d3-4f17-b2e1-be7f07588291/providers/Microsoft.Chaos/experiments?continuationToken=&api-version=2024-11-01-preview",
+        "nextLink": "https://management.azure.com/subscriptions/6b052e15-03d3-4f17-b2e1-be7f07588291/resourceGroups/exampleRG/providers/Microsoft.Chaos/experiments?continuationToken=&api-version=2024-11-01-preview",
         "value": [
           {
             "name": "exampleExperiment",
@@ -20,10 +21,6 @@
             },
             "location": "centraluseuap",
             "properties": {
-              "customerDataStorage": {
-                "blobContainerName": "azurechaosstudioexperiments",
-                "storageAccountResourceId": "/subscriptions/6b052e15-03d3-4f17-b2e1-be7f07588291/resourceGroups/exampleRG/providers/Microsoft.Storage/storageAccounts/exampleStorage"
-              },
               "selectors": [
                 {
                   "type": "List",
@@ -75,6 +72,6 @@
       "headers": {}
     }
   },
-  "operationId": "Experiments_ListAll",
-  "title": "List all Experiments in a subscription."
+  "operationId": "Experiments_List",
+  "title": "List all Experiments in a resource group."
 }
